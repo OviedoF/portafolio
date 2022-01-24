@@ -156,13 +156,19 @@ html.fp-enabled,
     text-decoration: none;
 }
 #fp-nav ul li a.active span,
-.fp-slidesNav ul li a.active span,
-#fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span{
+.fp-slidesNav ul li a.active span{
     width: 4em;
     border-radius: 2px;
     background-color: #f23b4d;
  }
+
+ #fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span{
+    width: 4em;
+    border-radius: 10px;
+    background-color: #f23b4d;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;
@@ -184,8 +190,17 @@ html.fp-enabled,
 .fp-slidesNav ul li:hover a span{
     width: 10px;
     height: 10px;
+    border-radius: 50%;
     margin: -5px 0px 0px -5px;
 }
+
+#fp-nav ul li:hover a.active span{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: -5px 0px 0px -5px;
+}
+
 #fp-nav ul li .fp-tooltip {
     position: absolute;
     top: -2px;

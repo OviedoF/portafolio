@@ -11,7 +11,7 @@ import { lettersAnimator } from "./animate-letters.js";
 
     })
 
-    const typed = new Typed('.typed', {
+    new Typed('.typed', {
         strings: ['<i class="typedText-main">front-end.</i>', '<i class="typedText-main">ux/ui designer.</i>', '<i class="typedText-main">codder.</i>', '<i class="typedText-main">nerd.</i>', '<i class="typedText-main">geek.</i>'],
         typeSpeed: 50,
         startDelay: 200,
@@ -31,17 +31,17 @@ import { lettersAnimator } from "./animate-letters.js";
     }, 1000);
 
     //---------------------------------------------------------------------//
-
-    const navBar = document.querySelector('.nav-container');
-    const heroImg = document.querySelector('.hero-img');
-    
-    //---------------------------------------------------------------------//
-    const pageSections = new fullpage('#fullpage', {
+    new fullpage('#fullpage', {
         easing: 'easeOutBounce',
         easingcss3: 'ease-in',
         scrollingSpeed: 800,
+
+        // NAVIGATION //
         navigation: true,
-        navigationPosition: 'left'
+        navigationPosition: 'left',
+        menu: '#menu',
+        anchors: ['home', 'aboutme', 'works', 'contact'],
+        navigationTooltips: ['Home', 'About Me', 'Works', 'Contact']
     });
 
     //---------------------------------------------------------------------//

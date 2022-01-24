@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/55575aacf2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&family=Questrial&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="loader-container">
@@ -29,17 +29,26 @@
         </div>        
     </div>
 
+    <nav class="nav-container">
+        <a href="#home" class="nav_mark">Federico Oviedo</a>
+
+        <ul class="nav_menu menu" id ="menu">
+            <li data-menuanchor="home" class="active">
+                <a href="#home" data-menuanchor="home">Home</a>
+            </li>
+            <li data-menuanchor="aboutme">
+                <a href="#aboutme">About me</a>
+            </li>
+            <li data-menuanchor="works">
+                <a href="#works">Works</a>
+            </li>
+            <li data-menuanchor="contact">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
     <main id="fullpage">
-        <nav class="nav-container">
-            <a >Federico Oviedo</a>
-
-            <ul class="icons">
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li> <i class="fab fa-github"></i></li>
-                <li><i class="fas fa-bars"></i>  </li>
-            </ul>
-        </nav>
 
         <header class="section">
             <div class="main-container">    
@@ -60,7 +69,7 @@
                 </div>
 
                 <div class="downarrow-icon">
-                    <p><a href="#"><i class="fas fa-chevron-down"></i></a></p>
+                    <p><a href="#aboutme"><i class="fas fa-chevron-down"></i></a></p>
                 </div>
             </div>            
         </header>
@@ -161,29 +170,76 @@
                 <div class="cards">
                     <label class="card" for="item-1" id="label-workImg1">
                         <img src="./src/img/projects imgs/TaskMeApp.png" alt="TaskMe APP">
-                        <div class="capa">
-                            <h3>Slee Dw</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sapiente repudiandae laboriosam soluta, iure quos quisquam quidem earum, assumenda, inventore eligendi quasi sequi necessitatibus? Temporibus corrupti porro dolorem hic iusto!</p>
+
+                        <div class="cape">
+                            <a href="https://oviedof.github.io/App-de-Tareas/">
+                                <span><i class="fas fa-arrow-right"></i></span>
+                            </a>
                         </div>
                     </label>
 
                     <label class="card" for="item-2" id="label-workImg2">
                         <img src="./src/img/projects imgs/Aerolinea Nostrus Landing Page.png" alt="Aerolinea Nostrus Page">
-                        <div class="capa">
-                            <h3>Slee Dw</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sapiente repudiandae laboriosam soluta, iure quos quisquam quidem earum, assumenda, inventore eligendi quasi sequi necessitatibus? Temporibus corrupti porro dolorem hic iusto!</p>
+
+                        <div class="cape">
+                            <a href="https://oviedof.github.io/App-de-Tareas/">
+                                <span><i class="fas fa-arrow-right"></i></span>
+                            </a>
                         </div>
                     </label>
 
                     <label class="card" for="item-3" id="label-workImg3">
                         <img src="./src/img/projects imgs/AnimalCrossingPage.png" alt="Animal Crossing Page">
-                        <div class="capa">
-                            <h3>Slee Dw</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias sapiente repudiandae laboriosam soluta, iure quos quisquam quidem earum, assumenda, inventore eligendi quasi sequi necessitatibus? Temporibus corrupti porro dolorem hic iusto!</p>
+
+                        <div class="cape">
+                            <a href="https://oviedof.github.io/App-de-Tareas/">
+                                <span><i class="fas fa-arrow-right"></i></span>
+                            </a>
                         </div>
                     </label>
                 </div>
             </div>
+        </section>
+
+        <section class="section contact-section">
+            <h4>Contact Me</h4>
+
+            <div class="contact-section_main">
+                <div class="info-section">
+                    <div class="adress">
+                        <div><i class="fas fa-map-marker-alt"></i></div>
+                        <h5>Adress</h5>
+                        <p>Pedro Soldano 840, Rafaela, Santa Fe</p>
+                    </div>
+
+                    <div class="number-cel">
+                        <div><i class="fas fa-phone-alt"></i></div>
+                        <h5>Cellphone number</h5>
+                        <p>+9 54 3492-621665</p>
+                    </div>
+
+                    <div class="email">
+                        <div><i class="far fa-envelope"></i></div>
+                        <h5>E-Mail</h5>
+                        <p>oviedofederico039@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <div class="container">
+                        <img src="./src/img/ContactMe section/profilepic.png" alt="Profile pic">
+                        <h4>Oviedo Federico</h4>
+                        <P>Front-End developer</P>
+        
+                        <div class="profile-card__socialIcons">
+                            <a href="https://www.linkedin.com/in/federico-oviedo-98663221a/" target="_BLANK"><i class="fab fa-linkedin"></i></a>
+                            <i class="fab fa-facebook-square"></i>
+                            <i class="fab fa-whatsapp"></i>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
