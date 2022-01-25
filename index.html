@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OVIEDO FEDERICO</title>
     <link rel="stylesheet" href="./css/fullpage.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/55575aacf2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,23 +37,31 @@
             <li data-menuanchor="home" class="active">
                 <a href="#home" data-menuanchor="home">Home</a>
             </li>
+
             <li data-menuanchor="aboutme">
                 <a href="#aboutme">About me</a>
             </li>
+
             <li data-menuanchor="works">
                 <a href="#works">Works</a>
             </li>
+            
             <li data-menuanchor="contact">
                 <a href="#contact">Contact</a>
             </li>
+
+            <li id="close_mobileMenu_icon">
+                <a href="#">-X-</a>
+            </li>
         </ul>
+
+        <i class="fas fa-bars"></i>
     </nav>
 
     <main id="fullpage">
 
         <header class="section">
             <div class="main-container">    
-                
                 <div class="section1-container">
                     <div class="main-text">
                         <h1>Federico Oviedo</h1>
@@ -74,11 +83,11 @@
             </div>            
         </header>
 
-        <section class="section about_me_section">
+        <section class="section about_me_section" >
             <div class="section2_text">
                 <h2>About Me</h2>                
 
-                <p>Amante y apasionado por la TI desde muy chico, sobre todo en materia de programación, donde soy estudiante autodidacta hace 2 años. 
+                <p id="aboutMeText">Amante y apasionado por la TI desde muy chico, sobre todo en materia de programación, donde soy estudiante autodidacta hace 2 años. 
                 Siento fascinación por las redes, la ciberseguridad y la creación de aplicaciones y sitios web; además, siento que tengo buen ojo para el diseño.</p>
                 <br>
 
@@ -229,7 +238,7 @@
                     <div class="container">
                         <img src="./src/img/ContactMe section/profilepic.png" alt="Profile pic">
                         <h4>Oviedo Federico</h4>
-                        <P>Front-End developer</P>
+                        <P id="Profile-card_text">Front-End developer</P>
         
                         <div class="profile-card__socialIcons">
                             <a href="https://www.linkedin.com/in/federico-oviedo-98663221a/" target="_BLANK"><i class="fab fa-linkedin"></i></a>

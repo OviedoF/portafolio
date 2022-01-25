@@ -1,5 +1,29 @@
 import { lettersAnimator } from "./animate-letters.js";
 
+function mobileAdapt() {
+
+    //--------------NAV--------------// 
+
+    document.querySelector('.fa-bars').addEventListener('click', () => {
+        document.querySelector('.nav-container ul').style.height = '50vh';
+    });
+
+    const closeNavMobile = document.querySelector('#close_mobileMenu_icon a');
+
+    closeNavMobile.addEventListener('click', () => {
+        document.querySelector('#menu').style.height = '0';
+    })
+
+    //--------------ABOUT ME--------------//
+    
+    document.querySelector('.stack_text').textContent = 'Tecnologías que utilizo...'
+
+    //--------------CONTACT--------------//
+
+    document.querySelector('#Profile-card_text').textContent = 'Social media'
+    
+}
+
 (async () => {
     await window.addEventListener('load', () => {
 
@@ -45,4 +69,6 @@ import { lettersAnimator } from "./animate-letters.js";
     });
 
     //---------------------------------------------------------------------//
+
+    mobileAdapt();
 }) ();
