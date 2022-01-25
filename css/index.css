@@ -81,6 +81,12 @@ body {
   transform: rotate(-45deg);
 }
 
+@media only screen and (max-width: 600px) {
+  .loader {
+    width: 250px;
+    height: 250px;
+  }
+}
 /* --------------------------- */
 /* NAV */
 /* --------------------------- */
@@ -284,6 +290,12 @@ body {
     position: absolute;
     left: 50%;
     bottom: 130px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .section1-container .main-text h1 {
+    width: 300px !important;
+    font-size: 70px !important;
   }
 }
 /*--------------------------*/

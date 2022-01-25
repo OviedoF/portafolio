@@ -14,10 +14,6 @@ function mobileAdapt() {
         document.querySelector('#menu').style.height = '0';
     })
 
-    //--------------ABOUT ME--------------//
-    
-    document.querySelector('.stack_text').textContent = 'Tecnologías que utilizo...'
-
     //--------------CONTACT--------------//
 
     document.querySelector('#Profile-card_text').textContent = 'Social media'
