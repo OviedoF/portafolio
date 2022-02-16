@@ -354,7 +354,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.about_me_section .section2_text .svg-container div svg {
+.about_me_section .section2_text .svg-container div svg, .about_me_section .section2_text .svg-container div img {
   font-size: 3em;
   height: 1em;
   margin-top: 25px;
@@ -373,7 +373,7 @@ body {
 .about_me_section .section2_text .svg-container div:hover h4 {
   display: block;
 }
-.about_me_section .section2_text .svg-container div:hover svg {
+.about_me_section .section2_text .svg-container div:hover svg, .about_me_section .section2_text .svg-container div:hover img {
   transform: scale(1.2);
 }
 .about_me_section .learning-container {
@@ -389,7 +389,7 @@ body {
   align-items: center;
   margin-left: 87px;
 }
-.about_me_section .learning-container div svg {
+.about_me_section .learning-container div svg, .about_me_section .learning-container div img {
   font-size: 3em;
   height: 1em;
   margin-top: 11px;
@@ -408,7 +408,7 @@ body {
 .about_me_section .learning-container div:hover h4 {
   display: block;
 }
-.about_me_section .learning-container div:hover svg {
+.about_me_section .learning-container div:hover svg, .about_me_section .learning-container div:hover img {
   transform: scale(1.3);
 }
 .about_me_section .cv-download {
@@ -464,6 +464,9 @@ body {
     width: 90%;
     margin-bottom: 40px;
   }
+  .about_me_section .section2_text .svg-container svg, .about_me_section .section2_text .svg-container img {
+    width: 40px;
+  }
   .about_me_section .section2_text .svg-container div:hover h4 {
     display: none;
   }
@@ -480,6 +483,12 @@ body {
     margin-left: 0px;
     width: 50%;
     text-align: center;
+  }
+  .about_me_section .learning-container div img {
+    width: 40px;
+  }
+  .about_me_section .learning-container div svg {
+    width: 50px;
   }
   .about_me_section .learning-container div h4 {
     display: none;
