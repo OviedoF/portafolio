@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./src/css/fullpage.css">
     <link rel="stylesheet" href="./src/css/aos.css">
     <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/aboutMe_section.css">
+    <link rel="stylesheet" href="./src/css/work_section.css">
+    <link rel="stylesheet" href="./src/css/contact_section.css">
     <script src="https://kit.fontawesome.com/55575aacf2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./src/img/logo.png"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -176,44 +179,60 @@
         </section>
 
         <section class="section work_section">
-            <h4>Look some of my works...</h4>
-            <div class="container">
-                <input type="radio" name="slider" id="item-1" checked>
-                <input type="radio" name="slider" id="item-2">
-                <input type="radio" name="slider" id="item-3">
+            <h4>Look at some of my works...</h4>
 
-                <div class="cards">
-                    <label class="card" for="item-1" id="label-workImg1">
-                        <img src="./src/img/projects imgs/TaskMeApp.png" alt="TaskMe APP">
+            <div class="work_slider">
 
-                        <div class="cape">
-                            <a href="https://oviedof.github.io/App-de-Tareas/">
-                                <span><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </label>
+            <!------------------------------------------>
 
-                    <label class="card" for="item-2" id="label-workImg2">
-                        <img src="./src/img/projects imgs/Aerolinea Nostrus Landing Page.png" alt="Aerolinea Nostrus Page">
+                <div class="work_slide active">
+                    <img src="./src/img/projects imgs/TaskMeApp.png" alt="TaskMeApp">
+                    <div class="info_slide active">
+                        <h2><a href="https://oviedof.github.io/App-de-Tareas/" target="_BLANK">TaskMeApp</a></h2>
+                    </div>
+                </div>
+                <div class="work_slide">
+                    <img src="./src/img/projects imgs/Aerolinea Nostrus Landing Page.png" alt="TaskMeApp">
+                    <div class="info_slide">
+                        <h2><a href="https://oviedof.github.io/NostrusAirlines/" target="_BLANK">Aerolíneas Nostrus</a></h2>
+                    </div>
+                </div>
+                <div class="work_slide">
+                    <img src="./src/img/projects imgs/codificadito.png" alt="TaskMeApp">
+                    <div class="info_slide">
+                        <h2><a href="https://oviedof.github.io/CODIFICADITO/" target="_BLANK">Codificadito</a></h2>
+                    </div>
+                </div>
+                <div class="work_slide">
+                    <img src="./src/img/projects imgs/SongFinder .png" alt="TaskMeApp">
+                    <div class="info_slide">
+                        <h2><a href="https://oviedof.github.io/lyricsfinder/" target="_BLANK">Lyrics Finder</a></h2>
+                    </div>
+                </div>
+                <div class="work_slide">
+                    <img src="./src/img/projects imgs/PortfolioONE.png" alt="TaskMeApp">
+                    <div class="info_slide">
+                        <h2><a href="https://oviedof.github.io/alura-portfolio/" target="_BLANK">Portafolio Oracle Next Education</a></h2>
+                    </div>
+                </div> 
 
-                        <div class="cape">
-                            <a href="https://oviedof.github.io/NostrusAirlines/">
-                                <span><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </label>
+            <!------------------------------------------>
 
-                    <label class="card" for="item-3" id="label-workImg3">
-                        <img src="./src/img/projects imgs/codificadito.png" alt="Animal Crossing Page">
+                <div class="work_navigation">
+                    <svg id='prev-btn' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M77.25 256l137.4-137.4c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25l160 160C175.6 444.9 183.8 448 192 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L77.25 256zM269.3 256l137.4-137.4c12.5-12.5 12.5-32.75 0-45.25s-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25l160 160C367.6 444.9 375.8 448 384 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L269.3 256z"/></svg>
+                    <svg id='next-btn' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M246.6 233.4l-160-160c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L178.8 256l-137.4 137.4c-12.5 12.5-12.5 32.75 0 45.25C47.63 444.9 55.81 448 64 448s16.38-3.125 22.62-9.375l160-160C259.1 266.1 259.1 245.9 246.6 233.4zM438.6 233.4l-160-160c-12.5-12.5-32.75-12.5-45.25 0s-12.5 32.75 0 45.25L370.8 256l-137.4 137.4c-12.5 12.5-12.5 32.75 0 45.25C239.6 444.9 247.8 448 256 448s16.38-3.125 22.62-9.375l160-160C451.1 266.1 451.1 245.9 438.6 233.4z"/></svg>
+                </div>
 
-                        <div class="cape">
-                            <a href="https://oviedof.github.io/CODIFICADITO/">
-                                <span><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </label>
+                <div class="work_navigation_visibility">
+                    <div class="slide-icon active" ></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
                 </div>
             </div>
+
+            <!------------------------------------------>
         </section>
 
         <section class="section contact-section">
@@ -248,8 +267,7 @@
         
                         <div class="profile-card__socialIcons">
                             <a href="https://www.linkedin.com/in/federico-oviedo-98663221a/" target="_BLANK"><i class="fab fa-linkedin"></i></a>
-                            <i class="fab fa-facebook-square"></i>
-                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://api.whatsapp.com/send/?phone=543492621665&text&app_absent=0"><i class="fab fa-whatsapp"></i></a>
                         </div>                    
                     </div>
                 </div>
@@ -259,8 +277,10 @@
     </main>
 
 
+    <script src="./src/js/work_slider.js"></script>
     <script src="./src/js/fullpage.js"></script>
     <script src="./src/js/typedJS.js"></script>
     <script src="./src/js/main.js" type="module"></script>
+
 </body>
 </html>

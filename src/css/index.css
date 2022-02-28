@@ -119,7 +119,6 @@ body {
   color: var(--main-color);
   text-decoration: none;
   text-transform: uppercase;
-  padding-bottom: 10px;
 }
 .nav-container .fa-bars {
   display: none;
@@ -138,9 +137,14 @@ body {
 .nav-container ul li {
   margin-right: 50px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .nav-container ul li.active a {
     font-size: 23px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .nav-container ul li.active a {
+    font-size: 20px;
   }
 }
 
@@ -269,6 +273,10 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  #fullpage > header > div > div > div.downarrow-icon {
+    margin-bottom: 0 !important;
+  }
+
   .section1-container {
     width: 100%;
   }
@@ -293,549 +301,51 @@ body {
   }
 }
 @media only screen and (max-width: 320px) {
+  #fullpage > header > div > div > div.downarrow-icon {
+    margin-bottom: 0;
+  }
+
   .section1-container .main-text h1 {
     width: 300px !important;
     font-size: 70px !important;
   }
 }
-/*--------------------------*/
-/* SECTION 2 */
-/*--------------------------*/
-.about_me_section .section2_text {
-  margin: 4% auto;
-  height: 80%;
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.about_me_section .section2_text h2 {
-  display: inline-block;
-  position: relative;
-  font-size: 35px;
-  transition: all 1s;
-  font-weight: 300;
-}
-.about_me_section .section2_text h2::after, .about_me_section .section2_text h2::before {
-  content: "";
-  position: absolute;
-  transition: all 1s;
-  width: 120px;
-  height: 2px;
-  background-color: var(--main-color);
-  top: 50%;
-}
-.about_me_section .section2_text h2::before {
-  right: 185px;
-}
-.about_me_section .section2_text h2::after {
-  left: 185px;
-}
-.about_me_section .section2_text h2:hover::after, .about_me_section .section2_text h2:hover::before {
-  width: 0px;
-}
-.about_me_section .section2_text p {
-  font-size: 1.3em;
-}
-.about_me_section .section2_text .stack_text {
-  width: 100%;
-}
-.about_me_section .section2_text .svg-container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
-  height: 20%;
-  justify-content: space-between;
-}
-.about_me_section .section2_text .svg-container div {
-  transition: all 1s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.about_me_section .section2_text .svg-container div svg, .about_me_section .section2_text .svg-container div img {
-  font-size: 3em;
-  height: 1em;
-  margin-top: 25px;
-  transition: all 0.5s;
-}
-.about_me_section .section2_text .svg-container div h4 {
-  display: none;
-  border: 1px solid var(--main-color);
-  position: absolute;
-  font-weight: 300;
-  width: 100px;
-  padding: 10px;
-  margin-top: 5.5em;
-  text-align: center;
-}
-.about_me_section .section2_text .svg-container div:hover h4 {
-  display: block;
-}
-.about_me_section .section2_text .svg-container div:hover svg, .about_me_section .section2_text .svg-container div:hover img {
-  transform: scale(1.2);
-}
-.about_me_section .learning-container {
-  margin-top: 50px;
-  height: 150px;
-  width: 100%;
-  display: flex;
-}
-.about_me_section .learning-container div {
-  transition: all 1s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 87px;
-}
-.about_me_section .learning-container div svg, .about_me_section .learning-container div img {
-  font-size: 3em;
-  height: 1em;
-  margin-top: 11px;
-  transition: all 0.5s;
-}
-.about_me_section .learning-container div h4 {
-  display: none;
-  border: 1px solid var(--main-color);
-  position: absolute;
-  width: 100px;
-  font-weight: 300;
-  padding: 10px;
-  margin-top: 5.5em;
-  text-align: center;
-}
-.about_me_section .learning-container div:hover h4 {
-  display: block;
-}
-.about_me_section .learning-container div:hover svg, .about_me_section .learning-container div:hover img {
-  transform: scale(1.3);
-}
-.about_me_section .cv-download {
-  width: 100%;
-  margin-top: 30px;
-}
-.about_me_section .cv-download a {
-  position: relative;
-  display: inline-block;
-  width: 300px;
-  height: 100px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
-}
-.about_me_section .cv-download a span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: var(--background-color);
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 1.5em;
-}
-.about_me_section .cv-download a span:nth-child(2) {
-  color: var(--main-color);
-  background-color: var(--background-color);
-  overflow: hidden;
-  z-index: 2;
-  transition: 0.5s;
-  height: 101%;
-  clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 50%);
-  width: 101%;
-}
-.about_me_section .cv-download a span:nth-child(2):hover {
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
-}
-.about_me_section .cv-download a span:nth-child(1):hover ~ span:nth-child(2) {
-  clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 62%);
-}
-
-@media only screen and (max-width: 600px) {
-  .about_me_section .section2_text h2 {
-    margin-top: 100px;
-    margin-bottom: 0;
-  }
-  .about_me_section .section2_text #aboutMeText {
-    display: none;
-  }
-  .about_me_section .section2_text .svg-container {
-    width: 90%;
-    margin-bottom: 40px;
-  }
-  .about_me_section .section2_text .svg-container svg, .about_me_section .section2_text .svg-container img {
-    width: 40px;
-  }
-  .about_me_section .section2_text .svg-container div:hover h4 {
-    display: none;
-  }
-  .about_me_section .section2_text .svg-container div:hover svg {
-    transform: scale(1.3);
-  }
-  .about_me_section .learning-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0;
-  }
-  .about_me_section .learning-container div {
-    display: block;
-    margin-left: 0px;
-    width: 50%;
-    text-align: center;
-  }
-  .about_me_section .learning-container div img {
-    width: 40px;
-  }
-  .about_me_section .learning-container div svg {
-    width: 50px;
-  }
-  .about_me_section .learning-container div h4 {
-    display: none;
-  }
-  .about_me_section .learning-container div:hover h4 {
-    display: none;
-  }
-  .about_me_section .learning-container div:hover svg {
-    transform: scale(1.3);
+@media only screen and (max-width: 425px) {
+  #fullpage > header > div > div > div.downarrow-icon {
+    margin-bottom: 0 !important;
   }
 
-  .cv-download {
-    text-align: center;
+  .main-container .section1-container .main-text {
+    margin-top: 3% !important;
   }
 
-  .cv-download a {
+  .nav-container ul li.active a {
+    font-size: 18px;
+  }
+  .nav-container .nav_mark {
     font-size: 10px;
-    width: 200px !important;
-    height: 60px !important;
   }
 }
-/*--------------------------*/
-/* WORKS SECTION */
-/*--------------------------*/
-.work_section {
-  max-width: 90%;
-  height: 90%;
-  margin: auto;
-  margin-top: 11%;
-  margin-left: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-}
-.work_section h4 {
-  position: absolute;
-  top: 15%;
-  left: auto;
-  font-size: 30px;
-  font-weight: 300;
-}
-.work_section .fp-tableCell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.work_section .container {
-  width: 100%;
-  height: 70%;
-  transform-style: preserve-3d;
-  position: relative;
-  top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.work_section .container input[type=radio] {
-  display: none;
-}
-.work_section .container .cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.work_section .container .cards .card {
-  position: absolute;
-  width: 60%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform 0.4s;
-}
-.work_section .container .cards .card img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: contain;
-  transition: all 1s ease-out;
-}
-.work_section .container .cards .card .cape {
-  color: var(--secondary-red-color);
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  top: -30%;
-  left: 0;
-  background-color: transparent;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.work_section .container .cards .card .cape a {
-  display: flex;
-  flex-direction: column;
-  width: 150px;
-  height: 55px;
-  text-align: center;
-  line-height: 55px;
-  margin: 10px;
-  text-transform: uppercase;
-  background-color: rgba(174, 254, 255, 0.486);
-  color: var(--background-color);
-  font-size: 18px;
-  font-weight: 500;
-  text-decoration: none;
-  overflow: hidden;
-  border: 2px solid var(--background-color);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-.work_section .container .cards .card .cape a:hover span {
-  transition: 0.4s ease-in;
-  transform: translateY(-100%);
-}
-.work_section .container .cards .card .cape a span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  transition: 0s ease-in;
-}
-.work_section .container .cards .card:hover .cape {
-  visibility: visible;
-  opacity: 1;
-  top: 10%;
-}
-.work_section .container #item-2:checked ~ .cards #label-workImg1,
-.work_section .container #item-1:checked ~ .cards #label-workImg3,
-.work_section .container #item-3:checked ~ .cards #label-workImg2 {
-  transform: translateX(-40%) scale(0.8);
-  opacity: 0.6;
-  z-index: 0;
-}
-.work_section .container #item-3:checked ~ .cards #label-workImg1,
-.work_section .container #item-1:checked ~ .cards #label-workImg2,
-.work_section .container #item-2:checked ~ .cards #label-workImg3 {
-  transform: translateX(40%) scale(0.8);
-  opacity: 0.6;
-  z-index: 0;
-}
-.work_section .container #item-1:checked ~ .cards #label-workImg1,
-.work_section .container #item-2:checked ~ .cards #label-workImg2,
-.work_section .container #item-3:checked ~ .cards #label-workImg3 {
-  transform: translateX(0) scale(1);
-  z-index: 1;
-}
+@media only screen and (max-width: 769px) {
+  .nav-container a {
+    font-size: 13px;
+  }
 
-@media only screen and (max-width: 600px) {
-  .work_section {
-    margin-left: 0;
-    text-align: center;
+  .main-container .section1-container .main-img {
+    left: -10%;
+    width: 20%;
+    height: 80%;
   }
-  .work_section h4 {
+  .main-container .section1-container .main-text {
+    margin-top: 50px;
+  }
+  .main-container .section1-container .main-text h1 {
+    font-size: 74px;
     width: 300px;
   }
-  .work_section .container .cards .cape {
-    display: none;
-  }
 
-  #label-workImg1 > div > a,
-#label-workImg2 > div > a,
-#label-workImg3 > div > a {
-    display: none;
-  }
-}
-/*--------------------------*/
-/* CONTACT SECTION */
-/*--------------------------*/
-.contact-section {
-  max-width: 100%;
-}
-.contact-section h4 {
-  font-size: 40px;
-  margin-top: 100px;
-  text-align: center;
-  margin-bottom: 60px;
-  font-weight: 300;
-}
-.contact-section .info-section {
-  width: 300px;
-  margin: 0;
-  position: absolute;
-  left: 20%;
-}
-.contact-section .info-section h5 {
-  font-size: 25px;
-}
-.contact-section .info-section .email, .contact-section .info-section .adress, .contact-section .info-section .number-cel {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-}
-.contact-section .info-section .email h5, .contact-section .info-section .adress h5, .contact-section .info-section .number-cel h5 {
-  margin: 4% 0 0 5%;
-}
-.contact-section .info-section .email div, .contact-section .info-section .adress div, .contact-section .info-section .number-cel div {
-  width: 50px;
-  height: 50px;
-  background-color: var(--nav-color);
-  border-radius: 50%;
-  text-align: center;
-}
-.contact-section .info-section .email div i, .contact-section .info-section .adress div i, .contact-section .info-section .number-cel div i {
-  position: relative;
-  top: 30%;
-}
-.contact-section .info-section .email p, .contact-section .info-section .adress p, .contact-section .info-section .number-cel p {
-  margin-top: 8px;
-  margin-left: 22%;
-}
-.contact-section .profile-card {
-  width: 400px;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  position: relative;
-  margin: auto 20% auto auto;
-  top: 0;
-  overflow: hidden;
-}
-.contact-section .profile-card .container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  transition: all 1s;
-}
-.contact-section .profile-card .container img {
-  width: 150px;
-  position: absolute;
-  top: 10%;
-  border-radius: 50%;
-}
-.contact-section .profile-card .container h4 {
-  position: absolute;
-  top: 50%;
-  font-size: 40px;
-  margin: 0;
-}
-.contact-section .profile-card .container p {
-  position: absolute;
-  top: 60%;
-  font-size: 25px;
-}
-.contact-section .profile-card .container img, .contact-section .profile-card .container h4, .contact-section .profile-card .container p, .contact-section .profile-card .container .profile-card__socialIcons i {
-  opacity: 0.5;
-  transition: all 1s;
-}
-.contact-section .profile-card .container .profile-card__socialIcons {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-  position: absolute;
-  bottom: 20px;
-  text-decoration: none;
-}
-.contact-section .profile-card .container .profile-card__socialIcons a {
-  text-decoration: none;
-  color: var(--main-color);
-}
-.contact-section .profile-card .container .profile-card__socialIcons i {
-  font-size: 40px;
-  margin: 30px;
-  position: relative;
-  top: 100%;
-  text-decoration: none;
-}
-.contact-section .profile-card .container .profile-card__socialIcons i ~ .fa-linkedin {
-  transition: all 0.5s;
-}
-.contact-section .profile-card .container .profile-card__socialIcons i ~ .fa-facebook-square {
-  transition: all 1.3s;
-}
-.contact-section .profile-card .container .profile-card__socialIcons i ~ .fa-whatsapp {
-  transition: all 2s;
-}
-.contact-section .profile-card:hover .container img, .contact-section .profile-card:hover .container h4, .contact-section .profile-card:hover .container p, .contact-section .profile-card:hover .container .profile-card__socialIcons i {
-  opacity: 1;
-}
-.contact-section .profile-card:hover .container img {
-  box-shadow: -1px 1px 20px 7px rgba(0, 0, 0, 0.98);
-  -webkit-box-shadow: -1px 1px 20px 7px rgba(0, 0, 0, 0.98);
-  -moz-box-shadow: -1px 1px 20px 7px rgba(0, 0, 0, 0.98);
-  top: 8%;
-}
-.contact-section .profile-card:hover .container h4 {
-  top: 48%;
-}
-.contact-section .profile-card:hover .container p {
-  top: 58%;
-}
-.contact-section .profile-card:hover .profile-card__socialIcons i {
-  top: 0px;
-}
-
-@media only screen and (max-width: 600px) {
-  .contact-section h4 {
-    margin-bottom: 0px;
-  }
-  .contact-section .contact-section_main {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-section .contact-section_main .info-section {
-    position: relative;
-    left: 30px;
-  }
-  .contact-section .contact-section_main .info-section div {
-    align-items: center;
-  }
-  .contact-section .contact-section_main .info-section div h5 {
-    display: none;
-  }
-  .contact-section .contact-section_main .info-section div p {
-    position: absolute;
-  }
-  .contact-section .contact-section_main .profile-card {
-    width: 85%;
-    position: relative;
-    margin-left: 30px;
-    margin-top: 5%;
-    height: 220px;
-  }
-  .contact-section .contact-section_main .profile-card img {
-    width: 100px;
-    height: 100px;
-  }
-  .contact-section .contact-section_main .profile-card h4 {
-    display: none;
-  }
-  .contact-section .contact-section_main .profile-card p {
-    transition: all 1s;
-  }
-  .contact-section .contact-section_main .profile-card .container:hover p {
-    opacity: 0;
+  #fullpage > header > div > div > div.downarrow-icon {
+    margin-bottom: 120px;
   }
 }
 /*--------------------------*/

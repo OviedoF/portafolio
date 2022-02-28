@@ -1,0 +1,342 @@
+/*--------------------------*/
+/* SECTION 2 */
+/*--------------------------*/
+
+.about_me_section{
+    .section2_text{
+        margin: 4% auto;
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            display: inline-block;
+            position: relative;
+            font-size: 35px;
+            transition: all 1s;
+            font-weight: 300;
+
+            &::after, &::before{
+                content: '';
+                position: absolute;
+                transition: all 1s;
+                width: 120px;
+                height: 2px;
+                background-color: var(--main-color);
+                top: 50%;
+            }
+
+            &::before{
+                right: 185px;
+            }
+            &::after {
+                left: 185px;
+            }
+
+            &:hover{
+                &::after, &::before {
+                    width: 0px;
+                }
+            }
+        }
+
+        p{
+            font-size: 1.3em;
+        }
+
+        .stack_text {
+            width: 100%;
+        }
+
+        .svg-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 20%;
+            justify-content: space-between;
+
+            div {
+                transition: all 1s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                svg, img {
+                    font-size: 3em;
+                    height: 1em;
+                    margin-top: 25px;
+                    transition: all 0.5s;
+                }
+
+                h4 {
+                    display: none;
+                    border: 1px solid var(--main-color);
+                    position: absolute;
+                    font-weight: 300;
+                    width: 100px;
+                    padding: 10px;
+                    margin-top: 5.5em;
+                    text-align: center;
+                }
+
+                &:hover {
+                    h4 {
+                        display: block;
+                    }
+
+                    svg,img {
+                     transform: scale(1.2);   
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    .learning-container{
+        margin-top: 50px;
+        height: 150px;
+        width: 100%;
+        display: flex;
+
+        div {
+            transition: all 1s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 87px;
+
+            svg, img {
+                font-size: 3em;
+                height: 1em;
+                margin-top: 11px;
+                transition: all 0.5s;
+            }
+
+            h4 {
+                display: none;
+                border: 1px solid var(--main-color);
+                position: absolute;
+                width: 100px;
+                font-weight: 300;
+                padding: 10px;
+                margin-top: 5.5em;
+                text-align: center;
+            }
+
+            &:hover {
+                h4 {
+                    display: block;
+                }
+
+                svg, img {
+                    transform: scale(1.3);                    
+                }
+
+            }
+        }
+    }
+
+    .cv-download {
+        width: 100%;
+        margin-top: 30px;
+
+        a {
+            position: relative;
+            display: inline-block;
+            width: 300px;
+            height: 100px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+        }
+
+        a span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            color: var(--background-color);
+            background-color: var(--main-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 1.5em;
+
+            &:nth-child(2) {
+                color: var(--main-color);
+                background-color: var(--background-color);
+                overflow: hidden;
+                z-index: 2;
+                transition: 0.5s;
+                height: 101%;
+                clip-path: polygon(60% 0, 100% 0%, 100% 100%, 60% 100%, 40% 50%);
+                width: 101%;
+
+                &:hover {
+                    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
+                }
+            }
+
+            &:nth-child(1):hover ~ span:nth-child(2){
+                clip-path: polygon(100% 0, 100% 0%, 100% 100%, 100% 100%, 100% 62%);
+            }
+        }
+    }
+}
+
+.work_section {
+        margin-left: 0;
+        margin-top: 0;
+
+        .work_slider{
+            width: 350px ;
+            height: 200px ;
+
+            .work_navigation{
+                height: 100%;
+
+                svg {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .work_navigation_visibility {
+                left: 30%;
+            }
+
+            .work_slide{
+                .info_slide {
+                    font-size: 7px;
+                }
+            }
+        }
+    }
+
+@media only screen and (max-width: 425px) {
+    .section2_text {
+        height: calc(100% - 600px);
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .section2_text {
+        width: 70% !important;
+        margin: 9% auto !important;
+
+        .cv-download {
+            width: 90%;
+            height: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about_me_section {
+        .section2_text{ 
+            h2 {
+                margin-top: 100px;
+                margin-bottom: 0;
+            }
+
+            #aboutMeText {
+                display: none;
+            }
+
+            .svg-container {
+                width: 90%;
+                margin-bottom: 40px;
+                svg, img {
+                    width: 40px;
+                }
+
+                div:hover {
+                    h4 {
+                        display: none;
+                    }
+    
+                    svg {
+                        transform: scale(1.3);                    
+                    }
+                }   
+            }
+        }
+
+        .learning-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0;
+            div {
+                img {
+                    width: 40px;
+                }
+
+                svg {
+                    width: 50px;
+                }
+
+                display: block;
+                margin-left: 0px;
+                width: 50%;
+                text-align: center;
+                h4 {
+                    display: none;
+                }
+
+                &:hover {
+                    h4 {
+                        display: none;
+                    }
+    
+                    svg {
+                        transform: scale(1.3);                    
+                    }
+                }
+            }
+        }
+
+    }
+
+    .cv-download {
+        text-align: center;
+    }
+
+    .cv-download a {
+        font-size: 10px;
+        width: 200px !important;
+        height: 60px !important;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .about_me_section {
+        .section2_text {
+            #aboutMeText {
+                display: none;
+            }
+
+            .svg-container {
+                width: 110%;
+                margin-bottom: 40px;
+                svg, img {
+                    width: 40px;
+                }
+
+                div:hover {
+                    h4 {
+                        display: none;
+                    }
+    
+                    svg {
+                        transform: scale(1.3);                    
+                    }
+                }   
+            }
+            
+            margin-left: 12%;
+        }   
+    }
+}
